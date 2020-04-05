@@ -1,0 +1,18 @@
+
+.merica {
+			font-family:impact;
+			font-size:25pt;
+			color: red;
+			text-decoration: underline;
+			text-shadow: 2px 2px 1px #FFFFFF, 4px 4px 1px #000080;
+			
+			{
+p {
+		color: mediumturquoise;
+		font-family:cursive;
+		font-size:large;
+		font-style: italic;
+		background-color: orangered;		
+		text-align: center;
+			{
+			

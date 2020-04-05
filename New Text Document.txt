@@ -8,3 +8,11 @@
 		<img src="pupper.jfif">
 	</body>
 </html>
+
+multible fonts and class attributes
+ P151
+table
+p161
+
+3
+5
