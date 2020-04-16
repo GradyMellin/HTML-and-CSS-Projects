@@ -82,11 +82,6 @@ section {
     margin-top: 50px;
 }
 
-.navbar {
-    height: 105px;
-    max-height: 340px;
-    display: block;
-}
 
 .container {
     padding-right: 15px;
@@ -131,10 +126,13 @@ section {
     content: " ";
     top: 0;
     left: 0; 
-    position : absolute; /*to the top of the screen*/
+    position : fixed; /*to the top of the screen*/
     width: 100%;
     z-index: 100;
-    background-color: rgba(255,255,255, 0.5);
+    background-color:  rgba(45, 90, 214, 0.75);
+    border: 2px solid rgb(2, 54, 131);
+    border-radius: 3px;
+
 }
 
 /*==========================================
@@ -145,9 +143,10 @@ section {
     font: bold 12px/18px sans-serif;
     text-align: center;
     display: inline;
-    margin: 0;
+    margin: .5em;
     padding: 0;
     list-style: none;
+    float: left;
 }
 
 .menu li {
@@ -156,13 +155,13 @@ section {
     margin-right: -2px;
     position: relative;
     padding: 12px 40px;
-    border: 1px solid #9D9FA2;
-    border-radius: 1.5px;
+    border: 2px solid rgb(3, 62, 150);
+    border-radius: 2px;
     background-color: #6683e2d2;
     cursor: pointer;
 }
 .menu li:hover {
-    background-color: #5eafdf;
+    background-color: #5e96df;
     color: #fff;
 }
 .menu li:hover ul {

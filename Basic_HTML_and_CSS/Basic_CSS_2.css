@@ -9,9 +9,94 @@
 p {
 		color: mediumturquoise;
 		font-family:cursive;
+		font-size:medium;
+		font-style: italic;	
+		text-align: center;
+}
+
+p:hover {
+		color: rgb(72, 200, 209);
+		font-family:'Courier New', Courier, monospace;
 		font-size:large;
-		font-style: italic;
+		font-style: bold;
 		background-color: orangered;		
 		text-align: center;
-			{
-			
+}
+.center img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+.center video{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+.container {
+	position: relative;
+	text-align: center;
+	padding: 15px;
+	background-color: black;
+	color: white;
+	overflow: hidden;
+	
+}
+.filter img{
+	filter: grayscale(50%)
+	sepia(100%)
+}
+.chat-shape img{
+	border-radius: 5px 30px 30px 30px;
+}
+.styled {
+	text-align: center;
+	font-weight: bold;
+}
+
+table,th, td{
+	border: 1px solid silver;
+	padding: 1em;
+}
+
+th {
+	background-color: darkgreen;
+	color: white;
+}
+
+.r1 td{
+	background-color: rgb(18, 0, 100);
+	color: white;
+}
+.r2 td{
+	background-color: rgb(100, 12, 0);
+	color: white;
+}
+.bottom-left {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.centered {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.column {
+	float: left;
+	width: 50%;
+	height: 1000px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
