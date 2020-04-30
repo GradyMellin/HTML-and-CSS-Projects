@@ -7,32 +7,34 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+   
     <title>Academy Cinemas</title>
   </head>
   <body>
     <div class="container">
         <!--NAVBAR-->
-        
             <nav class="navbar navbar-expand-lg navbar-light bg-info my-1.5">
-          
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                    <a class="nav-link text-light" href="#about">About </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-light" href="#showtimes">Showtimes</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link text-light" href="#deals">Deals</a>
-                    </li>
-                </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
-                </form>
-                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" data-toggle="collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                        <a class="nav-link text-light" href="#about">About </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#showtimes">Showtimes</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="#deals">Deals</a>
+                        </li>
+                    </ul>
+                    
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                            <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+                        </form>
+                </div>   
             </nav>
         
         <!--END NAVBAR-->
@@ -154,16 +156,73 @@
               </div>
         </div>
         <!--END SHOWTIMES-->
+        <!--MOVIE JUMBO DEALS-->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+              <h1 class="display-4 hidden-sm-down text-light" style="color">MOVIE DEALS</h1>
+              <p class="lead text-light">Check out our monthly deals...</p>
+                <!--MOVIE DEALS-->
+                <button type="button" class="btn btn-outline-primary popover-dismiss" data-container="body" data-toggle="modal" data-target="#register">See out monthly deals!</button>
+                <!--END MOVIE DEALS-->
+            </div>
+        </div>
+        <!--END MOVIE DEALS-->
         <!--ENTER EMAIL-->
         <div id="deals" class='text-center'>
             <form>
                 <h1 class="text-primary my-5">Sign up for Movie Club Rewards</h1>
-                <div class="form-group">
+                <div class="input-group mb-5">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <span class="input-group-btn">
+                    <button type="button" class="btn btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie reward!">
+                    Sign Up
+                    </button>
+                    </span>
                 </div>
-                   <button type="submit" class="btn btn-primary ">Submit</button>
             </form>
         </div>
+        <!--END ENTER EMAIL-->
+        <!--FORM MODAL-->
+        <div class="modal fade" id="register">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to receive movie deals</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <fieldset class="form-group">
+                          <label for="firstname">First Name:</label>
+                          <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password...">
+                        </fieldset>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="save">Save changes</button>
+                    <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END FORM MODAL-->
         <!--END ENTER EMAIL-->
         <!--FOOTER-->
         <div class="container bg-info my-3">
@@ -194,5 +253,29 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $('.popover-dismiss').popover({
+        trigger: 'focus'
+        })
+    </script>
+    <script type="text/javascript">
+        $("#firstname").click(function () {  
+            $(".progress-bar").css("width", 0+ "%").text(0+ "%");
+        });
+        $("#lastname").click(function () {  
+            $(".progress-bar").css("width", 25+ "%").text(25+ "%");
+        });
+        $("#email").click(function () {  
+            $(".progress-bar").css("width", 50+ "%").text(50+ "%");
+        });
+        $("#password").click(function () {  
+            $(".progress-bar").css("width", 75+ "%").text(75+ "%");
+        });
+        $("#save").click(function () {  
+            $(".progress-bar").css("width", 100+ "%").text(100+ "%");
+        });
+        
+    </script>
+    
   </body>
 </html>
